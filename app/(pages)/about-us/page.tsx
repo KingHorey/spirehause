@@ -83,7 +83,7 @@ const Page = () => {
       </section>
       <section className="space-y-10">
         <h2 className="text-4xl font-semibold">Board Members</h2>
-        <div className="grid grid-cols-3 gap-10">
+        <div className="grid xs:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {managementTeam.map(({ image, text, role }, index: number) => (
             <ProfileCard key={index} image={image} text={text} role={role} />
           ))}

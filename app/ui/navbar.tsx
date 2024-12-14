@@ -64,6 +64,7 @@ const Navbar = () => {
                 href={link}
                 key={index}
                 className={`${pathname === link ? "text-black" : "text-black/70"} font-semibold lg:text-base`}
+                onClick={() => setVisible(false)}
               >
                 {label}
               </Link>
